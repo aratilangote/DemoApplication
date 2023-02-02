@@ -29,6 +29,7 @@ public class SignupActivity extends AppCompatActivity {
         retypePassword = findViewById(R.id.retype_password);
         Address = findViewById(R.id.address);
         login = findViewById(R.id.btnlogin);
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +40,7 @@ public class SignupActivity extends AppCompatActivity {
                 String password = Password.getText().toString();
                 String Retypepassword = retypePassword.getText().toString();
                 String address = Address.getText().toString();
+
                 Toast.makeText(SignupActivity.this, "You have signup successfully!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(SignupActivity.this, MainActivity.class);
                 startActivity(intent);
