@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
     tools:context=".HomeActivity">
 
@@ -13,5 +14,15 @@
         android:layout_height="wrap_content"
         android:text="Wolcome Home"
         android:textSize="20sp"/>
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="50dp"
+        android:text="Logout"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
 
 </LinearLayout>
