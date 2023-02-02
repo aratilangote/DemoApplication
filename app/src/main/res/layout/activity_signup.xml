@@ -1,9 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SignupActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/purple_700"
+            android:textColor="@color/purple_700" />
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/purple_700"
+            android:textColor="@color/purple_700" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/purple_700"
+        android:textColor="@color/purple_700" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/purple_700"
+        android:textColor="@color/purple_700"
+        />
+    <EditText
+        android:id="@+id/retype_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:hint="Re-type Password"
+        android:textColorHint="@color/purple_700"
+        android:textColor="@color/purple_700"
+        />
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:inputType="textPostalAddress"
+        android:hint="Address"
+        android:textColorHint="@color/purple_700"
+        android:textColor="@color/purple_700"
+        />
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:transitionName="SEND OTP" />
+
+</LinearLayout>
