@@ -48,7 +48,32 @@
         android:inputType="textEmailAddress"
         android:textColorHint="@color/purple_700"
         android:textColor="@color/purple_700" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:hint="Mobile no"
+            android:inputType="phone"
+            android:textColorHint="@color/purple_700"
+            android:textColor="@color/purple_700" />
 
+        <Button
+            android:id="@+id/sendotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="30dp"
+            android:text="Send OTP"
+            android:textColor="@color/white" />
+    </LinearLayout>
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
@@ -92,8 +117,7 @@
         android:layout_marginHorizontal="30dp"
         android:background="@drawable/custom_button"
         android:layout_marginTop="30dp"
-        android:text="Sign Up"
-        android:textColor="@color/white"
-        android:transitionName="SEND OTP" />
+        android:text="Create Account"
+        android:textColor="@color/white" />
 
 </LinearLayout>
